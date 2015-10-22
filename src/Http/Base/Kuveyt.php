@@ -9,12 +9,48 @@
 namespace Phpuzem\Kuveyt\Http\Base;
 
 
+class Kuveyt {
 
-class Kuveyt extends AbstractKuveyt {
+    protected $name;
+    protected $cardnumber;
+    protected $cardexpiredatemonth;
+    protected $cardcvv2;
 
-    public function index()
+    public function make()
     {
-        return 'ok';
+        return new Kuveyt();
     }
+
+
+    public function setName($name)
+    {
+        $this->name = $name;
+
+        return $this;
+    }
+
+
+    public function setCardNumber($cardnumber)
+    {
+        $this->cardnumber = $cardnumber;
+
+        return $this;
+    }
+
+
+    public function setCardExpireDateMonth($cardexpiredatemonth)
+    {
+        $this->cardexpiredatemonth = $cardexpiredatemonth;
+
+        return $this;
+    }
+
+    public function setCardCvv2($cardcvv2)
+    {
+        $this->cardcvv2 = $cardcvv2;
+
+        return $this;
+    }
+
 
 }

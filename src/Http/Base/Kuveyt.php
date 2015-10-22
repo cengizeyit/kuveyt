@@ -15,6 +15,10 @@ class Kuveyt {
     protected $cardnumber;
     protected $cardexpiredatemonth;
     protected $cardcvv2;
+    protected $orderid;
+    protected $amount;
+    protected $customerid;
+    protected $cardexpiredateyear;
 
     public function make()
     {
@@ -45,11 +49,40 @@ class Kuveyt {
         return $this;
     }
 
+    public function setCardExpireDateYear($cardexpiredateyear)
+    {
+        $this->cardexpiredateyear = $cardexpiredateyear;
+
+        return $this;
+    }
+
     public function setCardCvv2($cardcvv2)
     {
         $this->cardcvv2 = $cardcvv2;
 
         return $this;
+    }
+
+    public function setOrderId($orderid)
+    {
+        $this->orderid = $orderid;
+
+        return $this;
+    }
+
+    public function setAmount($amount)
+    {
+        $this->amount = $amount;
+
+        return $this;
+    }
+
+    public function setCustomerId($customerid)
+    {
+        $this->customerid = $customerid;
+
+        return $this;
+
     }
 
 

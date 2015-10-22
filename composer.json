@@ -1,0 +1,21 @@
+{
+  "name": "phpuzem/kuveyt",
+  "description": "Laravel 5.1 Kuveyttürk Sanal Pos",
+  "license": "MIT",
+  "homepage": "https://github.com/phpuzem/kuveyt",
+  "authors": [
+    {
+      "name": "Halil Coşdu",
+      "email": "info@phpuzem.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Phpuzem\\Pnotify\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "illuminate/support": "~5"
+  }
+}

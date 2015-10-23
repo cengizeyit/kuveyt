@@ -38,7 +38,7 @@ php artisan vendor:publish
 ```
 komutunu kullanarak ``` config/kuveyt.php``` dosyasını yayınlıyoruz.
 
-### sms.php
+### kuveyt.php
 
 ```code
 return [

@@ -1,10 +1,5 @@
 # Laravel 5.1 KuveytTurk Sanal Pos
 
-[![Latest Stable Version](https://poser.pugx.org/phpuzem/kuveyt/v/stable.svg)](https://packagist.org/packages/phpuzem/kuveyt)
-[![Latest Unstable Version](https://poser.pugx.org/phpuzem/kuveyt/v/unstable.svg)](https://packagist.org/packages/phpuzem/kuveyt)
-[![License](https://poser.pugx.org/phpuzem/kuveyt/license.svg)](LICENSE)
-[![Total Downloads](https://poser.pugx.org/phpuzem/kuveyt/downloads)](https://packagist.org/packages/phpuzem/kuveyt)
-
 Komut satırından bu kodu çalıştırınız:
 ```
 composer require phpuzem/kuveyt dev-master

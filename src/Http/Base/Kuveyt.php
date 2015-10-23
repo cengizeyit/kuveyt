@@ -9,7 +9,7 @@
 namespace Phpuzem\Kuveyt\Http\Base;
 
 use Config;
-use Mockery\Exception;
+use Exception;
 
 class Kuveyt extends BaseClass {
 
@@ -26,7 +26,7 @@ class Kuveyt extends BaseClass {
             curl_setopt($ch, CURLOPT_HEADER, false); //Serverdan gelen Header bilgilerini önemseme.
             curl_setopt($ch, CURLOPT_URL, 'https://boa.kuveytturk.com.tr/sanalposservice/'); //Baglanacagi URL
             curl_setopt($ch, CURLOPT_POSTFIELDS, '<KuveytTurkVPosMessage xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">'
-                . '<APIVersion>1.0.0</APIVersion>'
+                . '<APIVersion>' . Config::get("kuveyt.APIVersion") . '</APIVersion>'
                 . '<OkUrl>' . Config::get("kuveyt.OkUrl") . '</OkUrl>'
                 . '<FailUrl>' . Config::get("kuveyt.FailUrl") . '</FailUrl>'
                 . '<HashData>' . $HashData . '</HashData>'
@@ -68,15 +68,14 @@ class Kuveyt extends BaseClass {
             $this->throwexception($variables, $key);
         endforeach;
         $this->process();
-        return $this;
     }
 
 
     protected function throwexception($key, $property)
     {
-        if (is_null($property) || is_null($key))
+        if (is_null($property))
         {
-            throw new Exception("" . $key . " alanı gereklidir.", 500);
+            throw new Exception("" . $key . " alanı gereklidir.", 212);
 
         }
     }

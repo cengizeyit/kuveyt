@@ -24,17 +24,17 @@ class BaseClass {
     protected $InstallmentCount = 0;
     protected $batchid = 0;
 
-    public function make()
-    {
-        return new Kuveyt();
-    }
-
 
     public function setName($name)
     {
         $this->name = $name;
 
         return $this;
+    }
+
+    public function getName()
+    {
+        return $this->name;
     }
 
 
@@ -45,12 +45,22 @@ class BaseClass {
         return $this;
     }
 
+    public function getCardNumber()
+    {
+        return $this->cardnumber;
+    }
+
 
     public function setCardExpireDateMonth($cardexpiredatemonth)
     {
         $this->cardexpiredatemonth = $cardexpiredatemonth;
 
         return $this;
+    }
+
+    public function getCardExpireDateMonth()
+    {
+        return $this->cardexpiredatemonth;
     }
 
     public function setCardExpireDateYear($cardexpiredateyear)
@@ -60,11 +70,21 @@ class BaseClass {
         return $this;
     }
 
+    public function getCardExpireDateYear()
+    {
+        return $this->cardexpiredateyear;
+    }
+
     public function setCardCvv2($cardcvv2)
     {
         $this->cardcvv2 = $cardcvv2;
 
         return $this;
+    }
+
+    public function getCardCvv2()
+    {
+        return $this->cardcvv2;
     }
 
     public function setOrderId($orderid)
@@ -74,11 +94,21 @@ class BaseClass {
         return $this;
     }
 
+    public function getOrderId()
+    {
+        return $this->orderid;
+    }
+
     public function setAmount($amount)
     {
         $this->amount = $amount * 100;
 
         return $this;
+    }
+
+    public function getAmount()
+    {
+        return $this->amount;
     }
 
     public function setCustomerId($customerid)
@@ -89,11 +119,21 @@ class BaseClass {
 
     }
 
+    public function getCustomerId()
+    {
+        return $this->customerid;
+    }
+
     public function setCardtype($cardtype)
     {
         $this->cardtype = $cardtype;
 
         return $this;
+    }
+
+    public function getCardtype()
+    {
+        return $this->cardtype;
     }
 
     public function setInstallmentCount($InstallmentCount)
@@ -103,11 +143,21 @@ class BaseClass {
         return $this;
     }
 
+    public function getInstallmentCount()
+    {
+        return $this->InstallmentCount;
+    }
+
     public function setBatchId($batchid)
     {
         $this->batchid = $batchid;
 
         return $this;
+    }
+
+    public function getBatchId()
+    {
+        return $this->batchid;
     }
 
 

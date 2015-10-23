@@ -1,7 +1,7 @@
 # Laravel 5.1 KuveytTurk Sanal Pos
 
-[![Latest Stable Version](https://poser.pugx.org/phpuzem/kuveyt/v/stable.svg)](https://packagist.org/packages/phpuzem/kuveyt)
-[![Latest Unstable Version](https://poser.pugx.org/phpuzem/kuveyt/v/unstable.svg)](https://packagist.org/packages/phpuzem/kuveyt)
+[![Latest Stable Version](https://poser.pugx.org/busayo/laravel-volt/v/stable.svg)](https://packagist.org/packages/phpuzem/kuveyt)
+[![Latest Unstable Version](https://poser.pugx.org/busayo/laravel-volt/v/unstable.svg)](https://packagist.org/packages/phpuzem/kuveyt)
 [![License](https://poser.pugx.org/phpuzem/kuveyt/license.svg)](LICENSE)
 [![Total Downloads](https://poser.pugx.org/phpuzem/kuveyt/d/total.png)](https://packagist.org/packages/phpuzem/kuveyt)
 

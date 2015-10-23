@@ -59,8 +59,10 @@ Kullanıma hazır!
 
 #Kullanımı
 ```php
+use Kuveyt;
+
 public function index()
 	{
-        $kuveyt = Kuveyt::setName("ok")->setCardNumber("5464")->setCardExpireDateMonth("17")->setCardExpireDateYear("17")->setCardCvv2("855")->setOrderId(1455)->setAmount(200)->setCustomerId(1541)->pay();
+        $kuveyt = Kuveyt::setName("Halil Coşdu")->setCardNumber(1234567891234567)->setCardExpireDateMonth(12)->setCardExpireDateYear(17)->setCardCvv2(855)->setOrderId(1455)->setAmount(100)->setCustomerId(1923)->pay();
 	}
 ```

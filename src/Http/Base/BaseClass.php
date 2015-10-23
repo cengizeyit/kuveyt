@@ -23,6 +23,7 @@ class BaseClass {
     protected $cardtype = "VISA";
     protected $InstallmentCount = 0;
     protected $batchid = 0;
+    protected $bag = [];
 
 
     public function setName($name)
@@ -159,6 +160,8 @@ class BaseClass {
     {
         return $this->batchid;
     }
+
+
 
 
 }

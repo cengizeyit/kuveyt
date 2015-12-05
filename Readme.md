@@ -7,22 +7,22 @@ composer require phpuzem/kuveyt dev-master
 
 ```config/app.php``` dosyasına aşağıda bulunan satırları ekliyoruz.
 ```php
-return array(
+return [
     // ...
 
-    'providers' => array(
+    'providers' => [
         // ...
 
         Phpuzem\Kuveyt\KuveytServiceProvider::class
-    ),
+    ],
 
     // ...
 
-    'aliases' => array(
+    'aliases' => [
         // ...
 
         'Kuveyt'    => Phpuzem\Kuveyt\Facades\Kuveyt::class
-    ),
+    ],
 );
 ```
 # Ayarlar
@@ -34,7 +34,7 @@ komutunu kullanarak ``` config/kuveyt.php``` dosyasını yayınlıyoruz.
 
 ### kuveyt.php
 
-```code
+```php
 return [
     "Type"                => "Sale",
     "APIVersion"          => "1.0.0",
@@ -56,7 +56,15 @@ Kullanıma hazır!
 use Kuveyt;
 
 public function index()
-	{
-        $kuveyt = Kuveyt::setName("Halil Coşdu")->setCardNumber(1234567891234567)->setCardExpireDateMonth(12)->setCardExpireDateYear(17)->setCardCvv2(855)->setOrderId(1455)->setAmount(100)->setCustomerId(1923)->pay();
-	}
+{
+    $kuveyt = Kuveyt::setName("Halil Coşdu")
+        ->setCardNumber(1234567891234567)
+        ->setCardExpireDateMonth(12)
+        ->setCardExpireDateYear(17)
+        ->setCardCvv2(855)
+        ->setOrderId(1455)
+        ->setAmount(100)
+        ->setCustomerId(1923)
+        ->pay();
+}
 ```

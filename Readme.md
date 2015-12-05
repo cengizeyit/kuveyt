@@ -57,7 +57,7 @@ use Kuveyt;
 
 public function index()
 {
-    $kuveyt = Kuveyt::setName("Halil Coşdu")
+    $kuveyt = Kuveyt::setName('Halil Coşdu')
         ->setCardNumber(1234567891234567)
         ->setCardExpireDateMonth(12)
         ->setCardExpireDateYear(17)
